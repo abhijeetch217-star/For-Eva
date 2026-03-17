@@ -1,0 +1,84 @@
+body{
+margin:0;
+overflow:hidden;
+font-family:'Segoe UI',sans-serif;
+}
+
+/* animated background */
+canvas{
+position:fixed;
+top:0;
+left:0;
+z-index:-1;
+}
+
+/* slider */
+.container{
+display:flex;
+width:600%;
+transition:0.7s ease;
+}
+
+.page{
+width:100vw;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+/* card */
+.card{
+background:rgba(255,255,255,0.25);
+backdrop-filter:blur(20px);
+padding:20px;
+border-radius:25px;
+text-align:center;
+box-shadow:0 10px 40px rgba(255,105,135,0.5);
+width:85%;
+max-width:330px;
+}
+
+/* gif */
+.gif-box img{
+width:100%;
+border-radius:15px;
+}
+
+/* text */
+h1{color:#ff4f7a;}
+p{color:#333;line-height:1.6;}
+
+/* button */
+button{
+padding:12px 20px;
+border:none;
+border-radius:30px;
+background:linear-gradient(45deg,#ff9ab5,#ff6a88);
+color:white;
+cursor:pointer;
+margin-top:10px;
+}
+
+/* popup */
+#popup{
+position:fixed;
+width:100%;
+height:100%;
+display:none;
+justify-content:center;
+align-items:center;
+background:rgba(0,0,0,0.4);
+}
+
+.popup-box{
+background:white;
+padding:25px;
+border-radius:20px;
+animation:pop 0.4s ease;
+}
+
+@keyframes pop{
+from{transform:scale(0.6);opacity:0}
+to{transform:scale(1);opacity:1}
+}
